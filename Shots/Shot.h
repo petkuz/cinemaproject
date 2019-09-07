@@ -9,5 +9,5 @@ class Shot {
 		Shot();
 		void AddFrames(Frame* framePointer);
 		Frame* GetFrames();
-		void Clean();
+		//void Clean();
 };

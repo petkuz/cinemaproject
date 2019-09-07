@@ -6,12 +6,12 @@ using namespace std;
 
 int main()
 {
-	Frame* framePointer = new Frame(555);
-	Shot* shotPointer = new Shot();
-	shotPointer->AddFrames(framePointer);
+	Frame frameObj = Frame(555);
+	Shot shotObj = Shot();
+	shotObj.AddFrames(&frameObj);
 
-	cout << shotPointer->GetFrames()->GetFrame() << "\n";
-	shotPointer->Clean();
-	cout << shotPointer->GetFrames()->GetFrame() << "\n";
+	cout << shotObj.GetFrames()->GetFrame() << "\n";
+	//shotPointer->Clean();
+	cout << shotObj.GetFrames()->GetFrame() << "\n";
 }
 
