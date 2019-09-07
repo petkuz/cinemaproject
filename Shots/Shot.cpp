@@ -1,20 +1,16 @@
 #include "Shot.h"
 
 
-Shot::Shot() 
+Shot::Shot()
 {
-	_framePointer = 0;
+	_frameObj = 0;
 }
 
-void Shot::AddFrames(Frame* framePointer)
+void Shot::AddFrames(Frame frameObj)
 {
-	_framePointer = framePointer;
+	_frameObj = frameObj;
 }
-//void Shot::Clean() 
-//{
-//	delete _framePointer;
-//}
-Frame* Shot::GetFrames() 
+Frame Shot::GetFrames() 
 {
-	return _framePointer;
+	return _frameObj;
 }

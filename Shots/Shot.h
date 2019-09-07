@@ -2,12 +2,13 @@
 #include "Frame.h"
 
 
-class Shot {
+class Shot 
+{
 	private:
-		Frame* _framePointer;
+		Frame _frameObj;
 	public:
 		Shot();
-		void AddFrames(Frame* framePointer);
-		Frame* GetFrames();
+		void AddFrames(Frame frameObj);
+		Frame GetFrames();
 		//void Clean();
 };
